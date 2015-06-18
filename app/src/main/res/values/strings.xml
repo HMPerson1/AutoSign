@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AutoSign</string>
+
+    <string name="next_button">Next</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_slide_list">Edit Slides</string>
+    <string name="title_slide_detail">Edit Slide</string>
+    <string name="prev_button">Previous</string>
+    <string name="list_button">List</string>
+    <string name="text_color">Text Color</string>
+    <string name="bg_color">Background Color</string>
+    <string name="default_sign_text">Sign Text</string>
+    <string name="sample_color_content_description">Color Samples</string>
+    <string name="sign_save_error">Error: Could not save sign</string>
+    <string name="action_add">Add Sign</string>
+    <string name="action_delete">Delete Sign</string>
+</resources>

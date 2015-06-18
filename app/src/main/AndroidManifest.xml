@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hmperson1.apps.autosign">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SignActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignListActivity"
+            android:label="@string/title_slide_list"
+            android:parentActivityName=".SignActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignActivity" />
+        </activity>
+        <activity
+            android:name=".SignDetailActivity"
+            android:label="@string/title_slide_detail"
+            android:parentActivityName=".SignListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignListActivity" />
+        </activity>
+    </application>
+
+</manifest>

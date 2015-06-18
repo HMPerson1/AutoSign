@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="hmperson1.apps.autosign.SignDetailFragment">
+
+    <EditText
+        android:id="@+id/signText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text="@string/default_sign_text"/>
+
+    <Spinner
+        android:id="@+id/typeface_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/text_color_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_color"/>
+
+            <Button
+                android:id="@+id/bg_color_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bg_color"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/color_sample_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@string/sample_color_content_description"/>
+    </LinearLayout>
+</LinearLayout>
